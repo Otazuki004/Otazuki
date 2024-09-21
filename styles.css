@@ -1,0 +1,157 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand h1 {
+    font-size: 1.8em;
+    color: ghostwhite;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav-links li a:hover {
+    color: #ff6347; /* Orange-red hover effect */
+}
+
+/* Personal Information Styling */
+.personal-info {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.personal-info h2 {
+    color: #ffeb3b;
+}
+
+/* Project Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Make buttons adapt to container width */
+    max-width: 250px; /* Limit the button width */
+}
+
+.project-btn:hover {
+    background-color: #218838;
+}
+
+/* Roadmap Styling */
+#roadmap {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap-list li {
+    padding: 10px 0;
+    font-size: 1.2em;
+    border-bottom: 1px solid #444;
+}
+
+.roadmap-list li .status {
+    color: #ff6347; /* Orange-red to match interest styling */
+    float: right;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        position: relative;
+        top: 0;
+        flex-direction: row;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+}

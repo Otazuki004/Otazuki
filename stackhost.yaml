@@ -1,3 +1,16 @@
 user:
-  name: Otazuki
-  github: Otazuki004
+  name: otazuki
+  github: otazuki004
+
+language: "html"
+
+commands:
+  build:
+    - "echo 'Building static site...'"
+  package:
+    - "echo 'Packaging static assets...'"
+  start:
+    - "echo 'No server-side code to start. Serve index.html'"
+
+env:
+  - "ENVIRONMENT=production"
